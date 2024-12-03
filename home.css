@@ -1,0 +1,330 @@
+#main{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+h1{
+    color: orangered;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.navbar > ul{
+    display: flex;
+    gap: 25px;
+}
+.navbar > ul >li{
+    text-decoration: none;
+    list-style: none;
+}
+.search{
+    display: flex;
+    align-items: center;
+    width: 10%;
+}
+.search > input {
+    border: none;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+.butt {
+    display: flex;
+    align-items: center;
+}
+.butt > button{
+    padding: 4px 12px;
+    font-size: 14px;
+    background-color:#218101;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+}
+button > a {
+  text-decoration: none;
+  color: white;
+}
+button:hover{
+    background-color: crimson;
+    color: white;
+    text-shadow: 4px 4px 4px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 3s;
+    cursor: pointer;
+}
+button:active{
+    background-color: aqua;
+    color:black;
+    box-shadow: 0 5px #4b4949;
+    transform: translateY(4px);
+    cursor: pointer;
+}
+hr{
+    width: 90%;
+    margin: auto;
+    border: 1.5px solid gray;
+}
+/* hero section */
+#hero{
+    display: flex;
+    justify-content: space-around;
+}
+#head3{
+    color: black;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode',Verdana, sans-serif;
+}
+.para > p{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+#btn{
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 25px;
+    background-color: rgb(255, 225, 54);
+    color: black;
+    font-family:  Helvetica, sans-serif;
+}
+#btn:hover{
+    background-color: black;
+    color: white;
+    text-shadow: 4px 4px 4px;
+    transition: 2s;
+    cursor: pointer;
+}
+/* hero1 section */
+#hero1{
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.heading,h4,.bn1{
+    text-align: center;
+}
+.heading{
+    color: white;
+}
+span{
+    background-color: orangered;
+    color: white;
+    font-size: 20px;
+}
+.grocery{
+    display: flex;
+    justify-content: space-around;
+}
+.grocery1{
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+}
+.parag{
+    text-align: center;
+    margin: auto;
+    font-size: 16px;
+    font-weight: 800;
+}
+#boy{
+    padding: 8px 18px;
+    font-size: 16px;
+    background-color: brown;
+    color: white;
+    border-radius: 20px;
+}
+#main1{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#class11{
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: cursive;
+    border-radius: 20px;
+    background-color: orchid;
+    color: black;
+}
+.para11 > p {
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+#class1{
+    color: black;
+    font-family: 'Lucida Sans',  'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.class22{
+    display: flex;
+    align-items: center;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 20vh;
+}
+.foot{
+    margin: auto;
+}
+#abc, h2{
+    text-align: center;
+    color: white;
+}
+
+/* media query */
+@media (max-width: 1024px) {
+    .navbar {
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+    }
+  
+    .search {
+      width: 30%;
+    }
+  
+    #hero {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .grocery {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .grocery1 {
+      width: 80%;
+    }
+  
+    #main1 {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .class22 {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .search {
+      width: 60%;
+      margin-bottom: 10px;
+    }
+  
+    #hero {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .grocery {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .grocery1 {
+      width: 100%;
+    }
+  
+    #main1 {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .footer {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    #btn {
+      font-size: 14px;
+      padding: 8px 18px;
+    }
+  
+    #boy {
+      font-size: 14px;
+      padding: 6px 14px;
+    }
+  }
+  
+  @media (max-width: 460px) {
+    .navbar > ul {
+      gap: 15px;
+      align-items: center;
+    }
+    .navbar > ul{
+        margin: auto;
+    }
+    .search {
+      width: 50%;
+    }
+    .head1 > h1{
+        text-align: center;
+    }
+  
+    #hero {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    #main1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .grocery1 {
+      width: 100%;
+      height: auto;
+      padding: 10px;
+    }
+    .grocery{
+        height: auto;
+        background-color: #4b4949;
+    }
+    #btn {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    #boy {
+      font-size: 14px;
+      padding: 6px 12px;
+    }
+  
+    #class11 {
+      font-size: 16px;
+    }
+  
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
